@@ -4,6 +4,7 @@ import ExpenseForm from "./ExpenseForm";
 
 const NewExpense = (props) => {
 
+  // 
     const SaveExpenseDataHandler = (enteredExpenseData) => {
         const expenseData = {
             ...enteredExpenseData,
@@ -15,6 +16,7 @@ const NewExpense = (props) => {
 
   return (
     <div className="new-expense">
+      {/* first step in the lift create a prop */}
       <ExpenseForm onSaveExpenseData={SaveExpenseDataHandler} />
     </div>
   );
